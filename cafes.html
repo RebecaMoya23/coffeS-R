@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoffeeHaven - Cafés</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="cafes.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Catálogo general -->
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+
+      <div class="product-card">
+        <img src="img/mushromm.jpg" alt="Mushroom Coffe" />
+        <h3>Café Finlandés</h3>
+        <p>$9000ARS</p>
+        <button onclick="mostrarDetalle('cafe1')">Ver Detalles</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/cafemanteca.jpg" alt="Bulletproof Coffee" />
+        <h3>Café Tibetiano</h3>
+        <p>$8000ARS</p>
+        <button onclick="mostrarDetalle('cafe2')">Ver Detalles</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/irlandes.jpg" alt="Café Irlandés" />
+        <h3>Café Irlandés</h3>
+        <p>$9000ARS</p>
+        <button onclick="mostrarDetalle('cafe3')">Ver Detalles</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/tailandia.jpg" alt="Black Ivory Coffee" />
+        <h3>Café Tailandés</h3>
+        <p>$15000ARS</p>
+        <button onclick="mostrarDetalle('cafe4')">Ver Detalles</button>
+      </div>
+    </section>
+
+   <section id="cafe1" class="detalle-cafe" style="display: none;">
+      <h2>Mushroom</h2>
+      <img src="img/mushromm.jpg" alt="Café Finlandés" />
+      <p>Café mezclado con extracto de hongos adaptógenos como chaga, reishi o lion’s mane.
+         Sabor: Terroso, suave.</p>
+      <p><strong>Precio:</strong> $9000ARS</p>
+      <p><strong>Origen:</strong> Finlandia</p>
+      <button onclick="mostrarDetalle('catalogo')">← Volver al catálogo</button>
+    </section>
+
+    <section id="cafe2" class="detalle-cafe" style="display: none;">
+      <h2>Bulletproof</h2>
+      <img src="img/cafemanteca.jpg" alt="Café Tibetiano" />
+      <p>Café mezclado con mantequilla de vacas alimentadas con pasto y aceite de coco.
+        Sabor: Cremoso, graso, como un latte potente.</p>
+      <p><strong>Precio:</strong> $8000ARS</p>
+      <p><strong>Origen:</strong> Tibet</p>
+      <button onclick="mostrarDetalle('catalogo')">← Volver al catálogo</button>
+    </section>
+
+    
+   <section id="cafe3" class="detalle-cafe" style="display: none;">
+      <h2>Café Irlandés</h2>
+      <img src="img/irlandes.jpg" alt="Café Irlandés" />
+      <p>Un café caliente con sabor a postre adulto, cremoso, con un toque alcohólico elegante. Dulce pero no empalagoso.</p>
+      <p><strong>Precio:</strong> $10000ARS</p>
+      <p><strong>Origen:</strong> Irlanda</p>
+      <button onclick="mostrarDetalle('catalogo')">← Volver al catálogo</button>
+    </section>
+
+    <section id="cafe4" class="detalle-cafe" style="display: none;">
+      <h2>Black Ivory Coffee</h2>
+      <img src="img/tailandia.jpg" alt="Café Tailandés" />
+      <p>Se hace con granos de café digeridos por elefantes. 
+        El proceso de fermentación en el estómago cambia el sabor.
+        Sabor: Suave, achocolatado, sin amargor. </p>
+      <p><strong>Precio:</strong> $15000ARS</p>
+      <p><strong>Origen:</strong> Tailandia</p>
+      <button onclick="mostrarDetalle('catalogo')">← Volver al catálogo</button>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 CoffeeS&R</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
